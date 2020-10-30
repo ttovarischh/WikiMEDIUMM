@@ -1,4 +1,21 @@
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;
+  margin: 0 auto;
+  background: white;
+  height: 3252px;
+  display: block;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  background: url('1024.jpg');
+  height: 100%;
+  /* width: 320px; */
+  display: block;
+  opacity: .2;
 }
 a { color: inherit;
 }

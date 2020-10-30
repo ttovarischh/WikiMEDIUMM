@@ -7,9 +7,49 @@
 	article > img { width: 100%; }
 }
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-article > * { width: calc(100% - 40px); }
+article > * { width: calc(100% - 40px);}
+article h1, h2, h3, p {padding-left: 16px;}
+article h1 + p { margin-bottom: 5px;}
+article h1 { padding-top: 23px; padding-bottom: 24px; font-size: 38px; line-height: 45px;}
+article img { margin-top: 43px;}
+article blockquote::before {  left: -5px;}
+article ul {padding-left: 17px;}
 }
-@media all and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+/* @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+article > * { width: calc(100% - 40px);}
+article h1, h2, h3, p {padding-left: 16px;}
+article h1 + p { margin-bottom: 5px;}
+article h1 { padding-top: 23px; padding-bottom: 24px; font-size: 38px; line-height: 45px;}
+article img { margin-top: 43px;}
+article blockquote::before {  left: -5px;}
+article ul {padding-left: 17px;}
+body {height: 3300px;}
+} */
+@media all and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: portrait) {
 body { min-width: 320px; }
 article > * { width: calc(100% - 40px); }
+article h1 + p {font-size: 19px; line-height: 27px; margin-bottom: 0;}
+article h1 { padding-top: 13px; font-size: 34px; line-height: 41px; margin-bottom: 0px;}
+article p {line-height: 27px; font-size: 19px;}
+article blockquote::before {left: -12px;}
+article ul {padding-left: 17px;}
+article h2 { font-size: 26px; line-height: 27px;}
+}
+@media all and (min-device-width: 1224px) and (max-device-width: 1281px) {
+article h1 { padding-top: 25px; font-size: 38px; line-height: 41px; padding-bottom: 25px;}
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* iPad Landscape */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* iPhone */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+  /* iPhone Portrait */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) {
+  /* iPhone Landscape */
 }
