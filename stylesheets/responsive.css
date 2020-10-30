@@ -6,7 +6,7 @@
 @media all and (max-width: 1020px) {
 	article > img { width: 100%; }
 }
-@media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media all and (min-device-width: 768px) and (max-device-width: 1022px) and (orientation: portrait) {
 article > * { width: calc(100% - 40px);}
 article h1, h2, h3, p {padding-left: 16px;}
 article h1 + p { margin-bottom: 5px;}
@@ -14,6 +14,15 @@ article h1 { padding-top: 23px; padding-bottom: 24px; font-size: 38px; line-heig
 article img { margin-top: 43px;}
 article blockquote::before {  left: -5px;}
 article ul {padding-left: 17px;}
+}
+@media all and (min-device-width: 1023px) and (max-device-width: 1024px) {
+/* article > * { width: calc(100% - 40px);}
+article h1, h2, h3, p {padding-left: 16px;}
+article h1 + p { margin-bottom: 5px;} */
+article h1 { padding-top: 25px; font-size: 38px; line-height: 41px; padding-bottom: 25px;}
+/* article img { margin-top: 43px;}
+article blockquote::before {  left: -5px;}
+article ul {padding-left: 17px;} */
 }
 /* @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 article > * { width: calc(100% - 40px);}
