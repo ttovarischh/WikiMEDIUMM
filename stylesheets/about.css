@@ -1,0 +1,77 @@
+section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 70px;
+  flex-flow: wrap;
+}
+section h1,
+section p{
+  width: 510px;
+  margin: 0 auto;
+}
+section h1,
+.bottom_block h1{
+  font-size: 40px;
+  margin-top: 60px;
+  margin-bottom: 26px;
+}
+section p,
+.bottom_block p{
+  font-size: 26px;
+  line-height: 36px;
+}
+section div:nth-of-type(2) h1,
+section div:nth-of-type(2) p,
+section div:nth-of-type(2) img {
+  margin-left: 0;
+}
+section div img{
+  object-fit: cover;
+}
+#a{
+  padding-left: 0px;
+}
+section div:nth-of-type(2) h1{
+  margin-top: 40px;
+}
+section:nth-of-type(2) img{
+  margin-top: 50px;
+}
+.bottom_block p,
+.bottom_block h1{
+  /* width: 800px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom_block{
+  text-align: center;
+  margin-bottom: 100px;
+  padding-top: 40px;
+  margin-top: 0px;
+  border-top: 1px solid #bbb;
+}
+.btns{
+  margin: 100px 10px 0;
+}
+.btn{
+  width: 280px;
+  text-decoration: none;
+  border: 1px solid #bbb;
+  padding: 15px 40px;
+  background: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+.btn-black{
+  color: white;
+  background-color: black;
+  border-color: black;
+}
+section img{
+  height: 700px;
+  margin: 80px 0 0 40px;
+}
+.img3{
+margin-top: 70px;
+}

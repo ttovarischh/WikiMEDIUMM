@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta property="og:type" content="article">
+    <meta name="viewport" content="width=device-width">
     <meta property="og:url" content="takie-dela-tovarisch.github.io">
     <meta property="og:title" content="Wikimedium">
     <meta property="og:description" content="Учебный проект по HTML/CSS">
@@ -15,6 +16,38 @@
       body {
         background: #eee;
       }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        /* iPhone */
+        body { min-width: 320px; height: 100%;}
+      	.index_item {
+          width: 100%;
+          margin: 0 auto 0;
+          margin-top: 0;
+          border: none;
+          border-radius: none;
+          box-shadow: none;}
+          .index_item h1 { font-size: 28px;
+          line-height: 40px;}
+          .index_item:nth-of-type(2) {
+            margin-top: 1px;
+          }
+      }
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+      /* iPad */
+      body { min-width: 768px; height: 100%;}
+      .index_item:nth-of-type(2) {
+          margin-top: 40px;
+        }
+      .index_item {
+          width: calc(100% - 20px);
+        margin: 0 auto 10px;}
+      }
+      @media only screen and (min-width: 1224px) {
+      /* Desktop */
+      body { min-width: 1224px; height: 100%;}
+}
+}
+
     </style>
   </head>
   <body>
